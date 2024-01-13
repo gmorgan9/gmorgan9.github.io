@@ -8,9 +8,9 @@ author: garrett
 toc: true
 ---
 
-## Service Side Steps
+# Service Side Steps
 
-### Step 1
+## Step 1
 You are going to need to create a directory in you /var/www directory connected with apache2. Do this by using this command, where you will change the domain.com with your desired domain/subdomain name:
 
 ```
