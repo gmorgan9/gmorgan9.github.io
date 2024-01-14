@@ -124,9 +124,7 @@ sudo systemctl restart apache2
 
 This is an important step, we want to check whether or not our sites are up and running. You will do this but going to your ip address. For example if your ip address is 192.168.1.10 you will want to go to the port you used for the site, so it will be 192.168.1.10:80, where the :80 is your port you are trying to go to. Once you can see that they are working, then we will move on to the steps that lead us into the Cloudflare steps.
 
-# Cloudflare Steps
-
-## Step 1
+## Cloudflare Steps
 
 In this step, we are going to create a tunnel, but if you already have a tunnel created then you can jump to step () and you can skip the tunnel set up steps. To create a tunnel, you will run this command to get your connection authorized. 
 
@@ -239,3 +237,11 @@ sudo systemctl enable cloudflared
 ```
 
 You should now be able to access your site anywhere on any network. If you want to go back and add another subdomain you can just go back and follow these steps.
+
+## Extra Steps in Cloudflare
+
+- Navigate to dash.cloudflare.com and select your website
+- Go to the SSL > Overview, and change the SSL/TLS encryption mode to either Full or Full (strict)
+- I’d also recommend turning on SSL/TLS Recommender to see what else you probably should do for encryption in the future.
+- Navigate to SSL > Edge Certificates
+- Turn on Always Use HTTPS
