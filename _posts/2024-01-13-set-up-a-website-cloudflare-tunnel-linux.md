@@ -7,23 +7,23 @@ tags: [cloudflare,linux,website]
 toc: true
 ---
 
-# Service Side Steps
+## Server Side Steps
 
-## Step 1
+### Step 1
 You are going to need to create a directory in you /var/www directory connected with apache2. Do this by using this command, where you will change the domain.com with your desired domain/subdomain name:
 
 ```shell
 sudo mkdir -p /var/www/domain.com/public_html
 ```
 
-## Step 2
+### Step 2
 You are going to need to change the permission of the folder. Do this by running the following command:
 
 ```shell
 sudo chmod -R 755 /var/www
 ```
 
-## Step 3
+### Step 3
 It's time to create the Index Page for your website. You are going to need to create an index.html file for each domain.  This step is going to show you how to create one index.html for one domain, but you will do the same thing for each domain if you have multiple. 
  
 Create index.html within your directory you created in step 1(you can use whatever text editor you want, I use nano).
@@ -40,7 +40,7 @@ testing for domain.com
 
 You will need to create an index.html file for each of the sites you are creating.
 
-## Step 4
+### Step 4
 Now its time to copy the config files for each site. You will do this by running the following command:
 
 ```shell
@@ -49,7 +49,7 @@ sudo cp /etc/apache2/sites-available/000-default.conf /etc/apache2/sites-availab
 
 You will need to do this for each of the sites that you are creating, just make sure you change the "domain.com" to your domain/subdomain name.
 
-## Step 5
+### Step 5
 Now it is time to edit the config file that you just copied for your site. You will do this by running this code(again using the text editor that you desire). 
 
 ```shell
@@ -100,7 +100,7 @@ Listen 443
 # vim: syntax=apache ts=4 sw=4 sts=4 sr noet
 ```
 
-## Step 6 
+### Step 6 
 Now its time to enable your config files. You will first have to disable the 000-default.conf file. You will do this by running the following command:
 
 ```shell
@@ -119,8 +119,8 @@ You will now have to restart the apache2 service so it will register our changes
 sudo systemctl restart apache2
 ```
 
-## Step 7
-### Confirmation Step
+### Step 7
+#### Confirmation Step
 
 This is an important step, we want to check whether or not our sites are up and running. You will do this but going to your ip address. For example if your ip address is 192.168.1.10 you will want to go to the port you used for the site, so it will be 192.168.1.10:80, where the :80 is your port you are trying to go to. Once you can see that they are working, then we will move on to the steps that lead us into the Cloudflare steps.
 
