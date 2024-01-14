@@ -3,7 +3,7 @@
 icon: fas fa-info-circle
 order: 4
 ---
-![YouTube Channel Subscribers](https://img.shields.io/youtube/channel/subscribers/UCqVXgSg-7MO_a8LBcCQPPXw?logo=Youtube&style=for-the-badge) ![Uptime Robot status](https://img.shields.io/uptimerobot/status/m795876240-550b567ea2d1812d28283a9b?style=for-the-badge&label=MorganServer) ![GitHub followers](https://img.shields.io/github/followers/gmorgan9?logo=GitHub&style=for-the-badge)
+![YouTube Channel Subscribers](https://img.shields.io/youtube/channel/subscribers/UCqVXgSg-7MO_a8LBcCQPPXw?style=for-the-badge) ![Uptime Robot status](https://img.shields.io/uptimerobot/status/m795876240-550b567ea2d1812d28283a9b?style=for-the-badge&label=MorganServer) ![GitHub followers](https://img.shields.io/github/followers/gmorgan9?style=for-the-badge)
 
 <!-- > Add Markdown syntax content to file `_tabs/about.md`{: .filepath } and it will show up on this page.
 {: .prompt-tip } -->
