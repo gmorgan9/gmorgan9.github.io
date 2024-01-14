@@ -6,7 +6,7 @@ order: 4
 
 ![garrett-banner](/assets/img/banner.png)
 
-<!-- ![YouTube Channel Subscribers](https://img.shields.io/youtube/channel/subscribers/UCqVXgSg-7MO_a8LBcCQPPXw?style=for-the-badge) -->
+![YouTube Channel Subscribers](https://img.shields.io/youtube/channel/subscribers/UCqVXgSg-7MO_a8LBcCQPPXw?style=for-the-badge)
 
 
 <!-- > Add Markdown syntax content to file `_tabs/about.md`{: .filepath } and it will show up on this page.
