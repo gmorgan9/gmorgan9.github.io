@@ -246,7 +246,7 @@ You should now be able to access your site anywhere on any network. If you want 
 
 - Navigate to dash.cloudflare.com and select your website
 - Go to the SSL > Overview, and change the SSL/TLS encryption mode to either Full or Full (strict)
-- This image has an empty alt attribute; its file name is Screenshot-2022-03-16-151529-1024x662.png
+
 - I’d also recommend turning on SSL/TLS Recommender to see what else you probably should do for encryption in the future.
 - Navigate to SSL > Edge Certificates
 - Turn on Always Use HTTPS
