@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Proxmox Install Notes"
-date: 2024-01-14 10:00:00 -500
+date: 2024-01-14 10:00:00 -600
 categories: [Proxmox]
 tags: [proxmox,virtualization]
 toc: true
