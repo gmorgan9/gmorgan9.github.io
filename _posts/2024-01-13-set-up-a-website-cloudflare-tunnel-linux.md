@@ -70,7 +70,7 @@ CustomLog ${APACHE_LOG_DIR}/access.log combined
 </VirtualHost>
 ```
 
-Update ServerName, ServerAlias, and DocumentRoot where it mentions domain.com, you change it with your domain/subdomain. You can also change the port number from :81 to whatever port you are porting your site off of. You will have to make sure that you edit your /etc/apache2/ports.conf. This file contains the ports that your IP address listens to. 
+Update ServerName, ServerAlias, and DocumentRoot where it mentions domain.com, you change it with your domain/subdomain. You can also change the port number from :81 to whatever port you are porting your site off of. You will have to make sure that you edit your `/etc/apache2/ports.conf`. This file contains the ports that your IP address listens to. 
  
 To edit this file, run the following command: 
 
@@ -141,7 +141,7 @@ This will either redirect you or give you a link that you can copy which is wher
 cloudflared tunnel create <your tunnel name>
 ```
 
-In this command you will replace <your tunnel name> with a desired name for your tunnel. It can be anything usually a one word name. This will create the tunnel within your cloudflare. You can check your tunnel list at your https://dash.teams.cloudflare.com/ URL which you can access through your cloudflare dashboard or you can run a command to list the current tunnels you have running. Keep track of the tunnel ID(UUID), you will need this later on. It will also create a file that has your tunnel ID(UUID).json. This is what controls the tunnel credentials file for you and you will need it later on when we configure your config.yaml file. 
+In this command you will replace `<your tunnel name>` with a desired name for your tunnel. It can be anything usually a one word name. This will create the tunnel within your cloudflare. You can check your tunnel list at your https://dash.teams.cloudflare.com/ URL which you can access through your cloudflare dashboard or you can run a command to list the current tunnels you have running. Keep track of the tunnel ID(UUID), you will need this later on. It will also create a file that has your tunnel ID(UUID).json. This is what controls the tunnel credentials file for you and you will need it later on when we configure your config.yaml file. 
 
 ```shell
 cloudflared tunnel list
@@ -217,7 +217,7 @@ This is going to remove the activated Daemon that you have running. Once you rem
 cloudflared tunnel --config /<path_to_config.yaml>/config.yaml run
 ```
 
-Where you will replace <path_to_config.yaml> with the path to your config.yaml file. And then this will run your tunnel and you should be able to get to your site via your domain or sub domain. If you are able to get to your domain/sub domain via domain.com  or subdomain.domain.com, then you know its working and its time to put up your tunnel via a Daemon. To do this, you need to run the following simple code if you are in the directory that your config file is in:
+Where you will replace `<path_to_config.yaml>` with the path to your config.yaml file. And then this will run your tunnel and you should be able to get to your site via your domain or sub domain. If you are able to get to your domain/sub domain via domain.com  or subdomain.domain.com, then you know its working and its time to put up your tunnel via a Daemon. To do this, you need to run the following simple code if you are in the directory that your config file is in:
 
 ```shell
 sudo cloudflared --config config.yaml service install
