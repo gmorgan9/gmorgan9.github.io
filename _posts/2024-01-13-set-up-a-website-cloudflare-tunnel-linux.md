@@ -4,7 +4,6 @@ title:  "Set up a Website CloudFlare Tunnel (Linux)"
 date: 2024-01-13 17:00:00 -500
 categories: [Web Devlopment]
 tags: [cloudflare,linux,website]
-author: garrett
 toc: true
 ---
 
@@ -240,12 +239,3 @@ sudo systemctl enable cloudflared
 ```
 
 You should now be able to access your site anywhere on any network. If you want to go back and add another subdomain you can just go back and follow these steps.
-
-<!-- #  Extra Steps
-## Set up CloudFlare HTTPS
-
-- Navigate to dash.cloudflare.com and select your website
-- Go to the SSL > Overview, and change the SSL/TLS encryption mode to either Full or Full (strict)
-- I’d also recommend turning on SSL/TLS Recommender to see what else you probably should do for encryption in the future.
-- Navigate to SSL > Edge Certificates
-- Turn on Always Use HTTPS -->
