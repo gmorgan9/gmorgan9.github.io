@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Set up a Website CloudFlare Tunnel (Linux)"
-date: 2024-01-13 17:00:00 -600
+date: 2024-01-13 17:00:00 -500
 categories: [Web Devlopment]
 tags: [cloudflare,linux,website]
 toc: true

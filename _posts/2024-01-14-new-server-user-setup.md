@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "New Server User Set up (Linux)"
-date: 2024-01-14 10:00:00 -600
+date: 2024-01-14 10:00:00 -500
 categories: [Linux]
 tags: [linux,new-user]
 toc: true
