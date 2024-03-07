@@ -72,7 +72,7 @@ theme_mode: dark
 # e.g. 'https://cdn.com'
 img_cdn:
 
-# the avatar on sidebar, support local or CORS resources
+# the avatar on sidebar, support local or CORS resources update
 avatar: /assets/img/garrett-morgan-cropped-vertical.jpg
 
 # The URL of the site-wide social preview image used in SEO `og:image` meta tag.
